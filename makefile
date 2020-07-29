@@ -3,4 +3,4 @@ README.md:guessinggame.sh
 	echo >> README.md
 	date >> README.md
 	echo >> README.md
-	< guessinggame.sh wc -l >> README.md
+	echo "There are $(shell < guessinggame.sh wc -l) lines in guessinggame.sh" >> README.md
